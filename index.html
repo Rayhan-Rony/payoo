@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,9 +12,47 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
+  <body class="bg-slate-700">
     <main>
-      <h1 class="">Hello</h1>
+      <section class="max-w-md min-h-screen bg-gray-200 mx-auto py-6">
+        <header class="">
+          <nav class="flex justify-center items-center mt-6">
+            <div
+              class="mt-10 relative flex justify-center items-center w-9/12 mb-10"
+            >
+              <img class="w-48 absolute" src="./assets/bg.png" alt="" />
+              <img class="w-16" src="./assets/Group.png" alt="" />
+            </div>
+          </nav>
+        </header>
+        <!-- login section  -->
+
+        <div class="">
+          <div class="hero-content flex-col lg:flex-row-reverse">
+            <div class="card w-full max-w-sm shrink-0 shadow-2xl">
+              <div class="card-body">
+                <fieldset class="fieldset">
+                  <label class="fieldset-label">Mobile Number</label>
+                  <input
+                    type="number"
+                    class="input w-full"
+                    placeholder="Enter your number"
+                  />
+
+                  <label class="fieldset-label">4 Digit Pin</label>
+                  <input
+                    type="password"
+                    class="input w-full"
+                    placeholder="Enter your pin"
+                  />
+                  <div><a class="link link-hover">Forgot password?</a></div>
+                  <button class="btn btn-neutral mt-4 w-full">Login</button>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
