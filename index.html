@@ -30,29 +30,38 @@
         <div class="">
           <div class="hero-content flex-col lg:flex-row-reverse">
             <div class="card w-full max-w-sm shrink-0 shadow-2xl">
-              <div class="card-body">
+              <form class="card-body">
                 <fieldset class="fieldset">
                   <label class="fieldset-label">Mobile Number</label>
                   <input
+                    value="01750436539"
+                    id="mobile-number"
                     type="number"
                     class="input w-full"
                     placeholder="Enter your number"
+                    required
                   />
 
                   <label class="fieldset-label">4 Digit Pin</label>
                   <input
+                    value="1234"
+                    id="pin"
                     type="password"
                     class="input w-full"
                     placeholder="Enter your pin"
+                    required
                   />
                   <div><a class="link link-hover">Forgot password?</a></div>
-                  <button class="btn btn-neutral mt-4 w-full">Login</button>
+                  <button id="login-btn" class="btn btn-neutral mt-4 w-full">
+                    Login
+                  </button>
                 </fieldset>
-              </div>
+              </form>
             </div>
           </div>
         </div>
       </section>
     </main>
+    <script src="./script/login.js"></script>
   </body>
 </html>
