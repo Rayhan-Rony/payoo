@@ -1,11 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Main</title>
+    <!-- daisy ui cdn  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <h1>Yes</h1>
+  <body class="bg-slate-700">
+    <main class="max-w-md min-h-screen bg-gray-200 mx-auto px-4">
+      <!-- top balance section  -->
+      <section>
+        <div
+          class="flex justify-between items-center p-6 border border-b-slate-300"
+        >
+          <div class="flex gap-4 items-center justify-center">
+            <div>
+              <img class="w-12" src="./assets/Group.png" alt="" />
+            </div>
+            <div>
+              <p class="font-extrabold">
+                $ <span id="main-balance">4500</span>
+              </p>
+              <p>Available Balance</p>
+            </div>
+          </div>
+
+          <div>
+            <button class="btn">Log Out</button>
+          </div>
+        </div>
+      </section>
+      <!-- payoo section  -->
+      <section class="mt-10">
+        <h1 class="text-3xl font-bold">🔥 Welcome to Payooo!</h1>
+        <p>
+          Enjoy easy and convenient financial services with us. Cashout charge
+          is low and
+        </p>
+        <!-- cards  -->
+        <div class="grid grid-cols-3 gap-3 mt-5">
+          <!-- card 1  -->
+          <div
+            class="border border-slate-400 rounded-md p-4 flex flex-col items-center justify-center space-y-2"
+          >
+            <div>
+              <img class="" src="./assets/wallet1.png" alt="" />
+            </div>
+            <p>Add Money</p>
+          </div>
+          <!-- card 2  -->
+          <div
+            class="border border-slate-400 rounded-md p-4 flex flex-col items-center justify-center space-y-2"
+          >
+            <div>
+              <img src="./assets/send1.png" alt="" />
+            </div>
+            <p>Cash Out</p>
+          </div>
+          <!-- card 3  -->
+          <div
+            class="border border-slate-400 rounded-md p-4 flex flex-col items-center justify-center space-y-2"
+          >
+            <div>
+              <img src="./assets/money1.png" alt="" />
+            </div>
+            <p class="text-sm">Transfer Money</p>
+          </div>
+          <!-- card 4  -->
+          <div
+            class="border border-slate-400 rounded-md p-4 flex flex-col items-center justify-center space-y-2"
+          >
+            <div>
+              <img src="./assets/bonus1.png" alt="" />
+            </div>
+            <p>Get bonus</p>
+          </div>
+          <!-- card 5  -->
+          <div
+            class="border border-slate-400 rounded-md p-4 flex flex-col items-center justify-center space-y-2"
+          >
+            <div>
+              <img src="./assets/purse1.png" alt="" />
+            </div>
+            <p>Pay bill</p>
+          </div>
+          <!-- card 6  -->
+          <div
+            class="border border-slate-400 rounded-md p-4 flex flex-col items-center justify-center space-y-2"
+          >
+            <div>
+              <img src="./assets/transaction1.png" alt="" />
+            </div>
+            <p>Transactions</p>
+          </div>
+        </div>
+      </section>
+      <!-- Add money section  -->
+      <section class="pt-10">
+        <h2 class="pb-4 text-xl text-blue-700">Add Money</h2>
+
+        <fieldset class="fieldset">
+          <legend class="mb-2">Select A Bank</legend>
+          <select class="select w-full">
+            <option disabled selected>Select a Bank</option>
+            <option value="Bkash">Bkash</option>
+            <option value="Nagad">Nagad</option>
+            <option value="DBBL">DBBL</option>
+          </select>
+          <label class="fieldset-label">Mobile Number</label>
+          <input
+            value="01750436539"
+            id="mobile-number"
+            type="number"
+            class="input w-full"
+            placeholder="Enter your number"
+            required
+          />
+          <label class="fieldset-label">Amount</label>
+          <input
+            id="amount"
+            type="number"
+            class="input w-full"
+            placeholder="Enter your amount"
+            required
+          />
+
+          <label class="fieldset-label">4 Digit Pin</label>
+          <input
+            value="1234"
+            id="pin"
+            type="password"
+            class="input w-full"
+            placeholder="Enter your pin"
+            required
+          />
+          <div><a class="link link-hover">Forgot password?</a></div>
+          <button
+            id="add-money-btn"
+            class="btn btn-neutral mt-4 w-full bg-blue-700 border-none"
+          >
+            Add Money
+          </button>
+        </fieldset>
+      </section>
+    </main>
+    <script src="./script/addMoney.js"></script>
   </body>
 </html>
