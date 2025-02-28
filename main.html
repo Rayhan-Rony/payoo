@@ -47,6 +47,7 @@
         <div class="grid grid-cols-3 gap-3 mt-5">
           <!-- card 1  -->
           <div
+            id="btn-add-money"
             class="border border-slate-400 rounded-md p-4 flex flex-col items-center justify-center space-y-2"
           >
             <div>
@@ -56,6 +57,7 @@
           </div>
           <!-- card 2  -->
           <div
+            id="btn-cash-out"
             class="border border-slate-400 rounded-md p-4 flex flex-col items-center justify-center space-y-2"
           >
             <div>
@@ -102,7 +104,7 @@
         </div>
       </section>
       <!-- Add money section  -->
-      <section class="pt-10">
+      <section id="add-money-section" class="pt-10">
         <h2 class="pb-4 text-xl text-blue-700">Add Money</h2>
 
         <fieldset class="fieldset">
@@ -149,7 +151,50 @@
           </button>
         </fieldset>
       </section>
+      <!-- CashOut Section  -->
+      <section id="cash-out-section" class="pt-10">
+        <h2 class="pb-4 text-xl text-blue-700">Cash Out</h2>
+
+        <fieldset class="fieldset">
+          <label class="fieldset-label">Agent Number</label>
+          <input
+            value="01750436539"
+            id="cashOut-number"
+            type="number"
+            class="input w-full"
+            placeholder="Enter 11 digit number"
+            required
+          />
+          <label class="fieldset-label">Amount</label>
+          <input
+            id="cashOut-amount"
+            type="number"
+            class="input w-full"
+            placeholder="Enter amount to withdraw"
+            required
+          />
+
+          <label class="fieldset-label">Pin Number</label>
+          <input
+            value="1234"
+            id="cashOut-pin"
+            type="password"
+            class="input w-full"
+            placeholder="Enter your pin"
+            required
+          />
+          <div><a class="link link-hover">Forgot password?</a></div>
+          <button
+            id="cashOut-btn"
+            class="btn btn-neutral mt-4 w-full bg-blue-700 border-none"
+          >
+            Cash Out
+          </button>
+        </fieldset>
+      </section>
     </main>
     <script src="./script/addMoney.js"></script>
+    <script src="./script/toggle.js"></script>
+    <script src="./script/cashOut.js"></script>
   </body>
 </html>
